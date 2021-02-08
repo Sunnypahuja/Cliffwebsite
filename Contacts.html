@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title><!--UTF-8 character set, covers all the characters and symbols in the world-->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body id="contact" onLoad="disableButton(true)">
+      <div id="container"><!--wrap everything on this container-->
+        <header><!--main header-->
+          <div class="main-header">
+            <div class="logo">
+              <img src="images/logo.png" alt="Great Cliff Logo" width="125"><!--logo image-->
+            </div><!-- Navigation start-->
+            <nav class="main-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cliffs.html">Cliffs</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="active"><a href="Contacts.html">Contact</li></a>
+              </ul>
+            </nav>
+          </div>
+        </header><!--Contact content-->
+        <main>
+          <div class="main-content">
+            <h1>Contacting Us</h1>
+            <p>You can drop by the visitors information center at the cliff site that you plan on visiting. They are open7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
+            </p>
+          </div>
+          <div class="contactinfo">
+            <div class="phone">
+              <span>Phone:</span>
+              <span>(800)GCLIFFS</span>
+            </div>
+            <div class="email">
+              <span>Email:</span>
+              <span>info@greatcliffs.com</span>
+            </div>
+          </div>
+          <form action="/contact" method="post">  
+            <fieldset>
+              <legend>Contact Form</legend>
+              <div class="textbox">
+                <label>Name:</label> 
+                <input type="text" name="name" placeholder="John Doe">  
+                <label>Email:</label>  
+                <input type="email" name="email" placeholder="johndoe@gmail.com"> 
+                <label>Phone:</label>
+                <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+              </div>
+              <div class="contact-option">
+                <label class="radios">How should we contact you?</label>  
+                <input type="radio" name="contact" value="email" checked>Email 
+                <input type="radio" name="contact" value="phone">Phone
+              </div>
+              
+              <div class="selectmenu">
+                <label class="drop-down">Which Cliff are you inquiring?</label>
+                <select>
+                  <option>West Cliff</option>
+                  <option>North Cliff</option>
+                  <option>East Cliff</option>
+                  <option>South Cliff</option>
+                </select>
+              </div>
+              <div class="commentbox">
+                <label>How did you hear about us:</label>
+                <textarea></textarea>
+              </div>
+              <!-- Random codes-->
+              <div class= "randomcode">
+                <input id="codeentered" type="text" name="randomcode" placeholder="Enter Character"/>
+                <p id="codes"></p>
+              </div>
+              
+              <div class="button">
+                <input id="submit" type="submit" value="Inquire" />
+              </div>
+            </fieldset>
+          </form><!--end form-->
+        </main>
+        <section><!--Section start -->
+          <ul id="partners"><!--attribute partners-->
+        <!-- <li class="partner">
+              <img src="partners/partner-bustour.png" alt="Partner Bus Tour">
+              </li> text Content with partner images>
+              <li class="partner">
+                <img src="partners/partner-cabinrental.png" alt="Partner Cabin rental">
+              </li>
+              <li class="partner">
+                <img src="partners/partner-campingadv.png" alt="partner-camping adventure">
+              </li>
+              <li class="partner">
+                <img src="partners/partner-collegetours.png" alt="Partner College Tours">
+              </li>
+              <li class="partner">
+                <img src="partners/partner-rentalbike.png" alt="Partner Bike rentals">
+              </li>
+              <li class="partner">
+                <img src="partners/partner-tourgroup.png" alt=" Partners Tour Group">
+              </li>--> 
+            </ul>
+          </section><!--Section end>-->
+        
+        <footer><!--footer starts-->
+        <div id="nondisclaimer">
+            <div class="copy">&copy Copyright 2020 :: GreatCliffs.com</div>
+            <div class="social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
+          <div id="disclaimer">
+            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+          </div>
+        </footer><!--footer ends-->
+        </div>
+        <script src = "js/script_scripts.js">
+        </script>
+        <script src = "js/randomcodes.js">
+        </script>
+    </body>
+    </html>
